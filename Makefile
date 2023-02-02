@@ -1,5 +1,4 @@
-# ENGINE=docker
-ENGINE=nerdctl.lima
+ENGINE=docker
 IMAGE=php_app
 APP_NAME=example
 RUN_FLAGS=-it --rm
