@@ -1,4 +1,4 @@
-FROM alpine:3.17.1
+FROM alpine:3.18
 RUN apk add --no-cache nginx php81 php81-opcache php81-fpm composer php81-intl supervisor bash vim
 
 # Setup php-fpm
