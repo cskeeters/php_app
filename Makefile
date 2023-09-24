@@ -15,7 +15,7 @@ simple:
 	$(ENGINE) run $(RUN_FLAGS) -p $(PORT):80 -v $(PWD)/app:/var/www/app -v $(PWD)/logs:/var/log/app --name $(APP_NAME) $(IMAGE) simple
 
 bash:
-	$(ENGINE) run $(RUN_FLAGS) -v $(PWD)/app:/var/www/app -v $(PWD)/logs:/var/log/app --name $(APP_NAME) $(IMAGE) simple
+	$(ENGINE) run $(RUN_FLAGS) -v $(PWD)/app:/var/www/app -v $(PWD)/logs:/var/log/app --name $(APP_NAME) $(IMAGE) bash
 
 stop:
 	$(ENGINE) container rm -f $(APP_NAME)
